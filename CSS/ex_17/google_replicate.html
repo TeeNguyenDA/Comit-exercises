@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Project</title>
+    <style>
+        * {
+           font-family: sans-serif; 
+        }
+        body {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 13px;
+        }
+        .nav-right {
+            display: flex;
+            width: auto;
+            align-items: center;
+            line-height: 15px;
+        }
+        nav a, nav img {
+            margin-right: 15px;
+        }
+        .menu-image {
+            height: 15px;
+        }
+        .profile-picture {
+            border: 0;
+            border-radius: 50px;
+            align-items: center;
+            height: 40px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .google-logo {
+            width: 250px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #dfe1e5;
+            border-radius: 25px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .search-container img {
+            width: 10px;
+            height: auto;
+        }
+        .search-container input {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 250px;
+            border: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .button-container button {
+            margin-right: 5px;
+            background: #f2f2f2;
+            color: #222;
+            border: 0;
+            border-radius: 4px;
+            padding: 8px 16px;
+        }
+        .language {
+            display: flex;
+            flex: 0 1 auto;
+            justify-content: center;
+            height: 194px;
+        }
+        section p {
+            text-align: center;
+            font-size: 11px;
+            color: rgb(34, 34, 34);
+        }
+        section a{
+            color: rgb(102, 0, 153);
+            font-size: 11px;
+            cursor: pointer;
+        }
+        footer {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: #f2f2f2;
+            font-size: 13px;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        footer a :hover {
+            text-decoration: underline;
+        }
+        .footer-top {
+            display: block;
+            height: 17px;
+            padding: 15px 30px;
+            justify-content: center;
+            border-bottom: 1px solid #e4e4e4;
+        }
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 17px;
+            padding: 15px 30px;
+            border-bottom: 1px solid #e4e4e4;
+        }
+        .bottom-right {
+            display: flex;
+            width: auto;
+            align-items: center;
+            line-height: 15px;
+        }
+        .bottom-left {
+            display: flex;
+            width: auto;
+            align-items: center;
+            line-height: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <img src="menu.png" class="menu-image"/>
+            <img src="http://placehold.it/50x50" class="profile-picture" />
+        </div>
+    </nav>
+
+    <main>
+        <img src="google-logo.png" alt="google-logo" class="google-logo">
+        
+        <form action="https://www.google.ca/search" method="GET">
+            <div class="search-container">
+            <img src="search-icon.png" alt="search-icon" />
+            <input type="search" name="q" />
+            <img src="voice-icon.png" alt="voice-icon" />
+            </div>
+
+            <div class="button-container">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </main>
+
+    <section>
+        <div class="language">
+        <p>Google offered in: <a href="#">Français</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <a href="#">Canada</a>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+
+            <div class="bottom-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
