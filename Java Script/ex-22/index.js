@@ -1,12 +1,11 @@
-"use strict"
 alert("Enter two numbers to see if the first is greater than the second");
 
-let message = Number(prompt(firstNumber));
-let message = Number(prompt(secondNumber));
+let firstNumber = Number(prompt('Enter first number'));
+let secondNumber = Number(prompt('Enter second number'));
 if (secondNumber > firstNumber) {
-    alert("Your second number is greater than your first number");
-} else if(secondNumber < firstNumber) {
-    alert("Your second number is smaller than your first number");
-} else(secondNumber = firstNumber) {
-    alert("Both numbers are of the same value");
+    alert("Second number is greater than first number");
+} else if (secondNumber < firstNumber) {
+    alert("Second number is smaller than first number");
+} else {
+    alert("Both numbers are of the same value")
 }
